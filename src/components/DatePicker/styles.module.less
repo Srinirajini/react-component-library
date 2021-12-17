@@ -1,0 +1,28 @@
+@import 'src/styles/variables.less';
+
+:global {
+  .ant-picker-focused,
+  .ant-picker:focus {
+    box-shadow: none !important;
+  }
+}
+
+// parent div will handle styling, ant picker will inherit the parent div's width
+.ant-picker {
+  display: flex;
+  width: inherit;
+}
+
+.ant-picker-error {
+  border-color: @negative-color;
+
+  &:focus,
+  &:hover {
+    border-color: @primary-color;
+    box-shadow: none;
+  }
+}
+
+  :global(.ant-picker-time-panel-column::after) {
+    display: none;
+  }

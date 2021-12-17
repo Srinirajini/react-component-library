@@ -1,0 +1,105 @@
+@import '../../node_modules/antd/lib/style/themes/default.less';
+
+/* 
+This less file is to override the default antd theme variables
+The default values can be referenced here: 
+https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+*/
+
+@font-weight-regular: 400;
+@font-weight-medium: 600;
+
+// -------- Colors -----------
+@primary-color: #193d61;
+@info-color: #3e71be;
+@success-color: #008649;
+@processing-color: @primary-color;
+@error-color: #d0021b;
+@highlight-color: #d0021b;
+@warning-color: #ee9603;
+@secondary-color: #8fbb54;
+
+// Semantic Color Palette
+@positive-color: #008649;
+@positive-assistance-1-color: #edfcf5;
+@positive-assistance-2-color: #d2f0bd;
+@negative-color: #d0021b;
+@negative-assistance-1-color: #fff4f4;
+@negative-assistance-2-color: #ffd6d8;
+
+@positive-alert-assistance-1-color: #ffe8b4;
+@positive-alert-assistance-2-color: #fff8e4;
+
+// Color used by default to control hover and active backgrounds and for
+// alert info backgrounds.
+@primary-1: #f5faff;
+@primary-2: @primary-1;
+@primary-3: #cfe0f9;
+@primary-4: #85c2ff;
+@primary-5: @info-color;
+
+// Background color for `<body>`
+@body-background: #f0f2f5;
+// Base background color for most components
+@component-background: #fff;
+
+@font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+@text-color: fade(@black, 87%); // #222222
+@text-color-secondary: fade(@black, 60%); // #666666
+@heading-color: fade(@black, 87%);
+@font-size-lg: @font-size-base + 4px;
+@line-height-base: 1.3;
+
+// Link
+@link-color: @primary-5;
+@link-hover-color: @primary-5;
+@link-active-color: @primary-5;
+
+// Border Color
+@border-color-split: hsv(0, 0, 91%);
+
+// Outline
+@background-color-base: hsv(0, 0, 96%);
+
+// Disabled states
+@disabled-color: fade(#000, 38%);
+
+// Buttons
+@btn-shadow: none;
+@btn-primary-shadow: none;
+@btn-text-shadow: none;
+@btn-square-only-icon-size: 20px;
+
+// Layout
+@layout-header-background: #1b4868;
+@layout-header-padding: 0 28px;
+@layout-header-height: 48px;
+@layout-sider-background: #ffffff;
+
+// Menu
+@menu-item-height: 40px;
+@menu-bg: #ffffff;
+@menu-item-active-bg: @primary-2;
+@menu-item-padding: 12px 16px;
+@menu-collapsed-width: 48px;
+@menu-highlight-color: @text-color;
+
+// Input
+
+@input-placeholder-color: @disabled-color;
+@input-icon-color: @text-color-secondary;
+@input-icon-hover-color: @text-color;
+
+// Dropdown
+@dropdown-icon-color: @disabled-color;
+
+// Tabs
+@tab-disabled-color: @disabled-color;
+
+// Table
+@table-column-color-grey: #FAFAFA;
+@table-column-color-white: #fff;
+@table-border-color: #f0f0f0;
